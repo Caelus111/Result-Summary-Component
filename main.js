@@ -33,7 +33,7 @@ function getInfo(params) {
         if (count >= scorePoint) {
           clearInterval(interval)
         }
-      }, 15);
+      }, 3);
     });
 }
 

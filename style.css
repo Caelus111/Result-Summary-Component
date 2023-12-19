@@ -31,8 +31,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: min(40.625em, 100%);
-  height: 28.125em;
+  width: min(46.25em, 100%);
+  height: 31.875em;
 }
 
 /* Results side */
@@ -49,13 +49,14 @@ body {
     var(--secondatBgClr) 100%
   );
   color: #fff;
-  border-radius: 20px;
+  border-radius: 30px;
   z-index: 4;
 }
 
 .circle {
-  width: 11em;
-  height: 11em;
+  width: 12em;
+  height: 12em;
+  padding: 3rem;
   background: var(--circleClr);
   background: linear-gradient(
     180deg,
@@ -69,26 +70,28 @@ body {
   line-height: 1.1;
 }
 
+.results h2 {
+  color: #ffffff9c;
+  font-size:clamp(1.125rem, 1.0011rem + 0.6196vw, 1.4813rem);
+}
+
 .results p {
-  font-size: clamp(0.75rem, 0.663rem + 0.4348vw, 1rem);
+  font-size:  clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
   color: #ffffff69;
 }
 
 .results h3 span {
   color: #fff;
-  font-size: 3em;
-}
-
-.results h2 {
-  color: #ffffff9c;
-  font-size:  clamp(0.9375rem, 0.8288rem + 0.5435vw, 1.25rem);
+  font-size:  clamp(4.0625rem, 3.9103rem + 0.7609vw, 4.5rem);
 }
 
 .results h1 {
-  font-size:  clamp(1.25rem, 1.1196rem + 0.6522vw, 1.625rem);
+  font-size:  clamp(1.125rem, 0.8691rem + 1.2793vw, 1.8606rem);
 }
 
 .para {
+  font-size:clamp(1rem, 0.9565rem + 0.2174vw, 1.12rem);
+    line-height: 1.46rem;
   color: #ffffff9c;
   transform: translateY(-20px);
   margin-inline: 3em;
@@ -136,14 +139,14 @@ body {
 
 .summary h2 {
   color: var(--textClr);
-  font-size: 1.25rem;
+  font-size:  clamp(1.25rem, 1.163rem + 0.4348vw, 1.5rem);
   transform: translateY(-13px);
 }
 
 .summary-stats {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 13px;
+  gap: 20px;
   transform: translateY(-19px);
   width: 100%;
 }
@@ -154,6 +157,7 @@ body {
   align-items: center;
   /* margin: 10px; */
   padding: 12px;
+  /* margin-bottom: .8rem; */
   border-radius: 5px;
 }
 
@@ -176,18 +180,18 @@ body {
 }
 
 .right-side img {
-  margin-inline: 10px;
+  margin-inline-end: 10px;
 }
 
 .right-side h3 {
   color: var(--clr);
-  font-size: 14px;
+ font-size:clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem); ;
   display: flex;
   align-items: center;
 }
 
 .left-side {
-  font-size: 15px;
+  font-size: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
   font-weight: bold;
   color: var(--phasedTextClr);
 }
